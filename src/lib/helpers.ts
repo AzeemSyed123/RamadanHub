@@ -50,12 +50,27 @@ export function calculateFastingDuration(fajr: string, maghrib: string): string 
 }
 
 /**
- * Get current Ramadan day (mock calculation - in production would use actual Islamic calendar)
+ * Get current Ramadan day based on Ramadan 2026 start date (February 18, 2026).
+ * Returns 1 if accessed before Ramadan starts.
+ * Returns the actual day number (1-30) during Ramadan, capped at 30 after day 30.
  */
 export function getCurrentRamadanDay(): number {
-  // Mock: return day between 1-30 based on day of month
   const today = new Date();
-  return (today.getDate() % 30) + 1;
+  // Ramadan 2026 starts on February 18, 2026
+  const ramadanStart = new Date(2026, 1, 18); // Month is 0-indexed
+  
+  // Calculate difference in days
+  const diffTime = today.getTime() - ramadanStart.getTime();
+  const diffDays = Math.floor(diffTime / (1000 * 60 * 60 * 24));
+  
+  // If before Ramadan starts, return 1
+  if (diffDays < 0) {
+    return 1;
+  }
+  
+  // Return day number (1-30), capped at 30
+  const dayNumber = diffDays + 1;
+  return Math.min(dayNumber, 30);
 }
 
 /**
