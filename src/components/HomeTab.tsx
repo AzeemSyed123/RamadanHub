@@ -6,7 +6,7 @@ import IftarCountdown from './IftarCountdown';
 import PrayerTimes from './PrayerTimes';
 import LocationPicker from './LocationPicker';
 import WorkplaceRights from './WorkplaceRights';
-import { calculateFastingDuration, getCurrentRamadanDay, isCurrentlyFasting } from '@/lib/helpers';
+import { calculateFastingDuration, getCurrentRamadanDay, isCurrentlyFasting, formatTime12Hour } from '@/lib/helpers';
 
 export default function HomeTab() {
   const { location, loading: locationLoading, error: locationError, updateLocation } = useLocation();
@@ -64,10 +64,7 @@ export default function HomeTab() {
             <div>
               <p className="text-sm text-gray-600 dark:text-gray-400">Suhoor Deadline</p>
               <p className="text-xl font-bold text-gray-900 dark:text-white">
-                {new Date(`2000-01-01T${suhoorDeadline}`).toLocaleTimeString('en-US', {
-                  hour: 'numeric',
-                  minute: '2-digit',
-                })}
+                {formatTime12Hour(suhoorDeadline)}
               </p>
             </div>
             <div>

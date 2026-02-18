@@ -221,7 +221,11 @@ export default function EventsTab() {
         </p>
         <button
           className="px-6 py-3 bg-primary-600 hover:bg-primary-700 text-white rounded-lg font-semibold transition"
-          onClick={() => alert('Event submission feature coming soon!')}
+          onClick={() => {
+            // In a production app, this would open a modal or form
+            // For now, we'll just log to console
+            console.log('Event submission feature coming soon!');
+          }}
         >
           Submit Your Event
         </button>
