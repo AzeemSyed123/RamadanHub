@@ -7,6 +7,7 @@ export interface PrayerTimings {
   Asr: string;
   Maghrib: string;
   Isha: string;
+  [key: string]: string;
 }
 
 export interface HijriDate {

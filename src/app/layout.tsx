@@ -1,4 +1,4 @@
-import type { Metadata } from 'next';
+import type { Metadata, Viewport } from 'next';
 import './globals.css';
 
 export const metadata: Metadata = {
@@ -7,16 +7,17 @@ export const metadata: Metadata = {
   keywords: ['Ramadan', 'Islam', 'Prayer Times', 'Iftar', 'Muslim', 'USA', 'Charity', 'Zakat'],
   authors: [{ name: 'Ramadan Hub USA' }],
   manifest: '/manifest.json',
-  themeColor: '#22c55e',
-  viewport: {
-    width: 'device-width',
-    initialScale: 1,
-    maximumScale: 1,
-  },
   icons: {
     icon: '/icons/icon-192x192.png',
     apple: '/icons/icon-192x192.png',
   },
+};
+
+export const viewport: Viewport = {
+  width: 'device-width',
+  initialScale: 1,
+  maximumScale: 1,
+  themeColor: '#22c55e',
 };
 
 export default function RootLayout({

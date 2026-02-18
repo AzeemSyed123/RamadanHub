@@ -72,7 +72,14 @@ export function isCurrentlyFasting(fajr: string, maghrib: string): boolean {
 /**
  * Get next prayer name and time
  */
-export function getNextPrayer(timings: { [key: string]: string }): {
+export function getNextPrayer(timings: {
+  Fajr: string;
+  Dhuhr: string;
+  Asr: string;
+  Maghrib: string;
+  Isha: string;
+  [key: string]: string;
+}): {
   name: string;
   time: string;
 } | null {
