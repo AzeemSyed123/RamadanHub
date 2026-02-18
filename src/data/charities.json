@@ -1,0 +1,98 @@
+[
+  {
+    "id": 1,
+    "name": "Islamic Relief USA",
+    "description": "Provides humanitarian relief and development programs to those in need worldwide, with a focus on disaster relief, orphan support, and sustainable development.",
+    "website": "https://irusa.org",
+    "donateUrl": "https://irusa.org/donate",
+    "categories": ["Zakat", "Sadaqah", "Disaster Relief", "International"]
+  },
+  {
+    "id": 2,
+    "name": "Helping Hand for Relief and Development",
+    "description": "International relief and development organization providing humanitarian aid and sustainable development solutions in underserved communities.",
+    "website": "https://hhrd.org",
+    "donateUrl": "https://hhrd.org/donate",
+    "categories": ["Zakat", "Sadaqah", "Education", "International"]
+  },
+  {
+    "id": 3,
+    "name": "Penny Appeal USA",
+    "description": "International charity working to provide food, water, education, and emergency aid to vulnerable communities around the world.",
+    "website": "https://pennyappealusa.org",
+    "donateUrl": "https://pennyappealusa.org/donate",
+    "categories": ["Zakat", "Sadaqah", "Water Projects", "International"]
+  },
+  {
+    "id": 4,
+    "name": "ICNA Relief",
+    "description": "Faith-based charitable organization providing social services, disaster relief, refugee assistance, and community development in the USA and abroad.",
+    "website": "https://icnarelief.org",
+    "donateUrl": "https://icnarelief.org/donate",
+    "categories": ["Zakat", "Sadaqah", "Domestic", "Disaster Relief"]
+  },
+  {
+    "id": 5,
+    "name": "Mercy USA",
+    "description": "International relief and development organization focused on alleviating human suffering and supporting underserved communities globally.",
+    "website": "https://mercyusa.org",
+    "donateUrl": "https://mercyusa.org/donate",
+    "categories": ["Zakat", "Sadaqah", "Healthcare", "International"]
+  },
+  {
+    "id": 6,
+    "name": "LaunchGood",
+    "description": "Crowdfunding platform dedicated to Muslim causes, helping individuals and organizations raise funds for charitable projects worldwide.",
+    "website": "https://launchgood.com",
+    "donateUrl": "https://launchgood.com/discover",
+    "categories": ["Sadaqah", "Crowdfunding", "Various Causes"]
+  },
+  {
+    "id": 7,
+    "name": "Zakat Foundation of America",
+    "description": "International charity organization providing humanitarian aid, disaster relief, and sustainable development programs with a focus on Zakat distribution.",
+    "website": "https://zakat.org",
+    "donateUrl": "https://zakat.org/donate",
+    "categories": ["Zakat", "Sadaqah", "Orphan Support", "International"]
+  },
+  {
+    "id": 8,
+    "name": "Baitulmaal",
+    "description": "Global charity organization committed to serving humanity through programs in education, healthcare, orphan care, and emergency relief.",
+    "website": "https://baitulmaal.org",
+    "donateUrl": "https://baitulmaal.org/donate",
+    "categories": ["Zakat", "Sadaqah", "Orphan Care", "International"]
+  },
+  {
+    "id": 9,
+    "name": "United Muslim Relief",
+    "description": "International relief organization providing humanitarian aid and sustainable development programs in crisis-affected communities.",
+    "website": "https://umrelief.org",
+    "donateUrl": "https://umrelief.org/donate",
+    "categories": ["Zakat", "Sadaqah", "Emergency Relief", "International"]
+  },
+  {
+    "id": 10,
+    "name": "Muslim Hands",
+    "description": "International NGO working to alleviate poverty and suffering through emergency relief, orphan sponsorship, and sustainable development.",
+    "website": "https://muslimhands.org",
+    "donateUrl": "https://muslimhands.org/donate",
+    "categories": ["Zakat", "Sadaqah", "Orphan Sponsorship", "International"]
+  },
+  {
+    "id": 11,
+    "name": "Human Appeal USA",
+    "description": "Global charity focusing on poverty relief, orphan support, and emergency aid in over 25 countries worldwide.",
+    "website": "https://humanappealusa.org",
+    "donateUrl": "https://humanappealusa.org/donate",
+    "categories": ["Zakat", "Sadaqah", "Poverty Relief", "International"]
+  },
+  {
+    "id": 12,
+    "name": "Islamic Circle of North America (ICNA)",
+    "description": "Grassroots organization working to build better communities through education, outreach, social services, and civil rights advocacy.",
+    "website": "https://icna.org",
+    "donateUrl": "https://icna.org/donate",
+    "categories": ["Sadaqah", "Domestic", "Education", "Civil Rights"]
+  }
+]
