@@ -8,7 +8,13 @@ import LocationPicker from './LocationPicker';
 import WorkplaceRights from './WorkplaceRights';
 import { calculateFastingDuration, getCurrentRamadanDay, isCurrentlyFasting, formatTime12Hour } from '@/lib/helpers';
 
-export default function HomeTab() {
+type Tab = 'home' | 'events' | 'meals' | 'charity';
+
+interface HomeTabProps {
+  onNavigateToTab: (tab: Tab) => void;
+}
+
+export default function HomeTab({ onNavigateToTab }: HomeTabProps) {
   const { location, loading: locationLoading, error: locationError, updateLocation } = useLocation();
   const { prayerTimes, loading: prayerLoading, error: prayerError } = usePrayerTimes(location);
 
@@ -90,39 +96,39 @@ export default function HomeTab() {
           🔗 Quick Links
         </h3>
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
-          <a
-            href="#events"
+          <button
+            onClick={() => onNavigateToTab('events')}
             className="flex items-center gap-3 p-3 bg-primary-50 dark:bg-primary-900/30 rounded-lg 
-                     hover:bg-primary-100 dark:hover:bg-primary-900/50 transition"
+                     hover:bg-primary-100 dark:hover:bg-primary-900/50 transition cursor-pointer text-left"
           >
             <span className="text-2xl">🎉</span>
             <div>
               <p className="font-semibold text-gray-900 dark:text-white">Iftar Events</p>
               <p className="text-xs text-gray-600 dark:text-gray-400">Find events near you</p>
             </div>
-          </a>
-          <a
-            href="#meals"
+          </button>
+          <button
+            onClick={() => onNavigateToTab('meals')}
             className="flex items-center gap-3 p-3 bg-primary-50 dark:bg-primary-900/30 rounded-lg 
-                     hover:bg-primary-100 dark:hover:bg-primary-900/50 transition"
+                     hover:bg-primary-100 dark:hover:bg-primary-900/50 transition cursor-pointer text-left"
           >
             <span className="text-2xl">🍽️</span>
             <div>
               <p className="font-semibold text-gray-900 dark:text-white">Meal Plans</p>
               <p className="text-xs text-gray-600 dark:text-gray-400">7-day meal ideas</p>
             </div>
-          </a>
-          <a
-            href="#charity"
+          </button>
+          <button
+            onClick={() => onNavigateToTab('charity')}
             className="flex items-center gap-3 p-3 bg-primary-50 dark:bg-primary-900/30 rounded-lg 
-                     hover:bg-primary-100 dark:hover:bg-primary-900/50 transition"
+                     hover:bg-primary-100 dark:hover:bg-primary-900/50 transition cursor-pointer text-left"
           >
             <span className="text-2xl">💝</span>
             <div>
               <p className="font-semibold text-gray-900 dark:text-white">Charity</p>
               <p className="text-xs text-gray-600 dark:text-gray-400">Track Zakat & Sadaqah</p>
             </div>
-          </a>
+          </button>
           <a
             href="https://quran.com"
             target="_blank"

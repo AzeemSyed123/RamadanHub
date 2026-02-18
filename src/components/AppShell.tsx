@@ -101,7 +101,7 @@ export default function AppShell() {
 
       {/* Main Content */}
       <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 pb-24 md:pb-8">
-        {activeTab === 'home' && <HomeTab />}
+        {activeTab === 'home' && <HomeTab onNavigateToTab={setActiveTab} />}
         {activeTab === 'events' && <EventsTab />}
         {activeTab === 'meals' && <MealsTab />}
         {activeTab === 'charity' && <CharityTab />}
