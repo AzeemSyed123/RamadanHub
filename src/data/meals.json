@@ -1,0 +1,205 @@
+[
+  {
+    "day": 1,
+    "suhoor": {
+      "title": "Energy-Packed Start",
+      "items": [
+        "Oatmeal with banana and honey",
+        "Greek yogurt with berries",
+        "Whole wheat toast with almond butter",
+        "Orange juice",
+        "2 dates",
+        "Plenty of water"
+      ],
+      "prepTime": "15 minutes",
+      "focus": "Slow-releasing carbs for sustained energy"
+    },
+    "iftar": {
+      "title": "Traditional Breaking",
+      "items": [
+        "3 dates and water",
+        "Lentil soup",
+        "Grilled chicken with rice",
+        "Mixed green salad",
+        "Hummus with pita",
+        "Fresh fruit salad"
+      ],
+      "prepTime": "45 minutes",
+      "focus": "Balanced nutrition with protein and fiber"
+    }
+  },
+  {
+    "day": 2,
+    "suhoor": {
+      "title": "Protein Power",
+      "items": [
+        "Scrambled eggs with spinach",
+        "Whole grain bagel with cream cheese",
+        "Avocado slices",
+        "Smoothie with protein powder",
+        "Dates",
+        "Coconut water"
+      ],
+      "prepTime": "20 minutes",
+      "focus": "High protein to keep you full longer"
+    },
+    "iftar": {
+      "title": "Mediterranean Feast",
+      "items": [
+        "Dates and water",
+        "Tomato soup",
+        "Grilled salmon with quinoa",
+        "Greek salad with feta",
+        "Roasted vegetables",
+        "Baklava for dessert"
+      ],
+      "prepTime": "50 minutes",
+      "focus": "Omega-3s and Mediterranean flavors"
+    }
+  },
+  {
+    "day": 3,
+    "suhoor": {
+      "title": "Hydration Focus",
+      "items": [
+        "Chia seed pudding with mango",
+        "Cottage cheese with cucumber",
+        "Whole wheat crackers",
+        "Watermelon slices",
+        "Green tea",
+        "Electrolyte water"
+      ],
+      "prepTime": "10 minutes",
+      "focus": "Maximum hydration and easy to digest"
+    },
+    "iftar": {
+      "title": "Pakistani Delight",
+      "items": [
+        "Dates and water",
+        "Pakoras (vegetable fritters)",
+        "Chicken biryani",
+        "Raita (yogurt sauce)",
+        "Naan bread",
+        "Kheer (rice pudding)"
+      ],
+      "prepTime": "60 minutes",
+      "focus": "Traditional South Asian flavors"
+    }
+  },
+  {
+    "day": 4,
+    "suhoor": {
+      "title": "Fiber-Rich Morning",
+      "items": [
+        "Bran cereal with milk",
+        "Banana and strawberries",
+        "Whole wheat toast with jam",
+        "Hard-boiled eggs",
+        "Apple juice",
+        "Water with lemon"
+      ],
+      "prepTime": "15 minutes",
+      "focus": "High fiber for digestive health"
+    },
+    "iftar": {
+      "title": "Middle Eastern Spread",
+      "items": [
+        "Dates and water",
+        "Fattoush salad",
+        "Shawarma wraps",
+        "Tabbouleh",
+        "Baba ganoush",
+        "Kunafa for dessert"
+      ],
+      "prepTime": "40 minutes",
+      "focus": "Fresh vegetables and authentic flavors"
+    }
+  },
+  {
+    "day": 5,
+    "suhoor": {
+      "title": "Quick & Easy",
+      "items": [
+        "Peanut butter banana smoothie",
+        "Granola bar",
+        "String cheese",
+        "Grapes",
+        "Dates",
+        "Plenty of water"
+      ],
+      "prepTime": "5 minutes",
+      "focus": "Fast preparation for busy mornings"
+    },
+    "iftar": {
+      "title": "Comfort Food",
+      "items": [
+        "Dates and water",
+        "Chicken noodle soup",
+        "Meatloaf with mashed potatoes",
+        "Steamed broccoli",
+        "Dinner rolls",
+        "Apple pie"
+      ],
+      "prepTime": "55 minutes",
+      "focus": "Hearty and satisfying American classics"
+    }
+  },
+  {
+    "day": 6,
+    "suhoor": {
+      "title": "Sweet & Savory",
+      "items": [
+        "French toast with maple syrup",
+        "Turkey sausage",
+        "Mixed berries",
+        "Cottage cheese",
+        "Orange juice",
+        "Water"
+      ],
+      "prepTime": "20 minutes",
+      "focus": "Balanced sweet and savory for satisfaction"
+    },
+    "iftar": {
+      "title": "Asian Fusion",
+      "items": [
+        "Dates and water",
+        "Egg drop soup",
+        "Beef stir-fry with vegetables",
+        "Steamed jasmine rice",
+        "Spring rolls",
+        "Mango sticky rice"
+      ],
+      "prepTime": "45 minutes",
+      "focus": "Light yet flavorful Asian cuisine"
+    }
+  },
+  {
+    "day": 7,
+    "suhoor": {
+      "title": "Weekend Special",
+      "items": [
+        "Vegetable omelet",
+        "Hash browns",
+        "Whole wheat pancakes",
+        "Fresh fruit platter",
+        "Milk",
+        "Water with mint"
+      ],
+      "prepTime": "30 minutes",
+      "focus": "Leisurely breakfast to start the week strong"
+    },
+    "iftar": {
+      "title": "Global Flavors",
+      "items": [
+        "Dates and water",
+        "Minestrone soup",
+        "Lamb kebabs with couscous",
+        "Greek salad",
+        "Garlic bread",
+        "Tiramisu"
+      ],
+      "prepTime": "50 minutes",
+      "focus": "Variety of international cuisines"
+    }
+  }
+]
