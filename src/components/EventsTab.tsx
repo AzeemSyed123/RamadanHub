@@ -16,6 +16,7 @@ export default function EventsTab() {
   const [discoveryCity, setDiscoveryCity] = useState('');
   const [discovering, setDiscovering] = useState(false);
   const [discoveryError, setDiscoveryError] = useState('');
+  const [submitMessage, setSubmitMessage] = useState<{ type: 'success' | 'error'; text: string } | null>(null);
 
   useEffect(() => {
     fetchEvents();
@@ -74,6 +75,7 @@ export default function EventsTab() {
 
   const handleSubmitDiscoveredEvent = async (event: DiscoveredEvent) => {
     try {
+      setSubmitMessage(null);
       const response = await fetch('/api/events/submit', {
         method: 'POST',
         headers: {
@@ -89,9 +91,14 @@ export default function EventsTab() {
         throw new Error('Failed to submit event');
       }
 
-      alert('Event submitted successfully and is pending approval!');
+      setSubmitMessage({ type: 'success', text: 'Event submitted successfully and is pending approval!' });
+      setTimeout(() => setSubmitMessage(null), 5000);
     } catch (err) {
-      alert(err instanceof Error ? err.message : 'Failed to submit event');
+      setSubmitMessage({ 
+        type: 'error', 
+        text: err instanceof Error ? err.message : 'Failed to submit event' 
+      });
+      setTimeout(() => setSubmitMessage(null), 5000);
     }
   };
 
@@ -181,6 +188,22 @@ export default function EventsTab() {
               {discovering ? '🔄 Searching...' : '🔍 Discover Events'}
             </button>
           </div>
+
+          {submitMessage && (
+            <div className={`mb-4 p-4 rounded-lg border ${
+              submitMessage.type === 'success'
+                ? 'bg-green-100 dark:bg-green-900/30 border-green-400 dark:border-green-800'
+                : 'bg-red-100 dark:bg-red-900/30 border-red-400 dark:border-red-800'
+            }`}>
+              <p className={`${
+                submitMessage.type === 'success'
+                  ? 'text-green-800 dark:text-green-300'
+                  : 'text-red-800 dark:text-red-300'
+              }`}>
+                {submitMessage.type === 'success' ? '✓' : '✗'} {submitMessage.text}
+              </p>
+            </div>
+          )}
 
           {discoveryError && (
             <div className="mb-4 p-4 bg-red-100 dark:bg-red-900/30 border border-red-400 dark:border-red-800 rounded-lg">

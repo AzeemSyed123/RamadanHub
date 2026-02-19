@@ -18,9 +18,14 @@ export function getSupabase(): SupabaseClient {
   return supabaseInstance;
 }
 
-// For backwards compatibility
+// Cached instance for backwards compatibility
+let cachedSupabase: SupabaseClient | null = null;
+
 export const supabase = new Proxy({} as SupabaseClient, {
   get(_target, prop) {
-    return getSupabase()[prop as keyof SupabaseClient];
+    if (!cachedSupabase) {
+      cachedSupabase = getSupabase();
+    }
+    return cachedSupabase[prop as keyof SupabaseClient];
   }
 });
